@@ -9,20 +9,33 @@
 * =========|_|==============|___/=/_/_/_/
 , :: Spring Boot ::        (v2.2.2.RELEASE)
 
-Â2020-11-27 20:50:04.202  INFO 6724 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on nec with PID 6724 (started by Lena in C:\Users\Lena\IdeaProjects\Web Quiz Engine\Web Quiz Engine\task)
-•2020-11-27 20:50:04.206  INFO 6724 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
-ë2020-11-27 20:50:05.945  INFO 6724 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
-~2020-11-27 20:50:05.959  INFO 6724 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-î2020-11-27 20:50:05.960  INFO 6724 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-ó2020-11-27 20:50:06.102  INFO 6724 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-§2020-11-27 20:50:06.102  INFO 6724 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1825 ms
-õ2020-11-27 20:50:06.523  INFO 6724 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-ö2020-11-27 20:50:06.798  INFO 6724 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-†2020-11-27 20:50:06.868  INFO 6724 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
-¢2020-11-27 20:50:06.873  INFO 6724 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 3.177 seconds (JVM running for 4.19)
-û2020-11-27 20:50:07.294  INFO 6724 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-ç2020-11-27 20:50:07.295  INFO 6724 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-Ö2020-11-27 20:50:07.304  INFO 6724 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+Á2020-11-29 19:13:31.543  INFO 10880 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on nec with PID 10880 (started by Lena in C:\Users\Lena\IdeaProjects\Web Quiz Engine\Web Quiz Engine\task)
+¶2020-11-29 19:13:31.549  INFO 10880 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
+°2020-11-29 19:13:33.226  INFO 10880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+∫2020-11-29 19:13:33.338  INFO 10880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97ms. Found 1 JPA repository interfaces.
+ä2020-11-29 19:13:33.854  INFO 10880 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+í2020-11-29 19:13:34.252  INFO 10880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-11-29 19:13:34.268  INFO 10880 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2020-11-29 19:13:34.268  INFO 10880 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+ò2020-11-29 19:13:34.482  INFO 10880 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+•2020-11-29 19:13:34.482  INFO 10880 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2820 ms
+Ä2020-11-29 19:13:34.664  INFO 10880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+Ö2020-11-29 19:13:35.049  INFO 10880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+ª2020-11-29 19:13:35.060  INFO 10880 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:..\quizdb'
+ü2020-11-29 19:13:35.694  INFO 10880 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ç2020-11-29 19:13:35.813  INFO 10880 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+û2020-11-29 19:13:36.060  INFO 10880 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+ü2020-11-29 19:13:36.273  INFO 10880 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Ÿ2020-11-29 19:13:37.455  INFO 10880 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2020-11-29 19:13:37.470  INFO 10880 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+ù2020-11-29 19:13:37.830  WARN 10880 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ú2020-11-29 19:13:37.970  INFO 10880 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+õ2020-11-29 19:13:38.352  INFO 10880 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+°2020-11-29 19:13:38.425  INFO 10880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+§2020-11-29 19:13:38.428  INFO 10880 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 7.637 seconds (JVM running for 9.028)
+ü2020-11-29 19:13:38.849  INFO 10880 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2020-11-29 19:13:38.851  INFO 10880 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+á2020-11-29 19:13:38.861  INFO 10880 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
 [1;31m
 Start test 2[0m
 [1;31m
@@ -57,45 +70,84 @@
 Start test 17[0m
 [1;31m
 Start test 18[0m
-≤2020-11-27 20:50:07.725  WARN 6724 --- [nio-8889-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 4, column: 4]]
 [1;31m
 Start test 19[0m
-≤2020-11-27 20:50:07.751  WARN 6724 --- [io-8889-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 5, column: 4]]
+ù2020-11-29 19:13:40.066  INFO 10880 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+•2020-11-29 19:13:40.068  INFO 10880 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+ä2020-11-29 19:13:40.070  INFO 10880 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+à2020-11-29 19:13:40.173  INFO 10880 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+)  .   ____          _            __ _ _
+* /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
++( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+, \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
++  '  |____| .__|_| |_|_| |_\__, | / / / /
+* =========|_|==============|___/=/_/_/_/
+, :: Spring Boot ::        (v2.2.2.RELEASE)
+
+Á2020-11-29 19:13:40.305  INFO 10880 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on nec with PID 10880 (started by Lena in C:\Users\Lena\IdeaProjects\Web Quiz Engine\Web Quiz Engine\task)
+¶2020-11-29 19:13:40.306  INFO 10880 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
+°2020-11-29 19:13:40.632  INFO 10880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+π2020-11-29 19:13:40.642  INFO 10880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 1 JPA repository interfaces.
+ä2020-11-29 19:13:40.709  INFO 10880 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+≥2020-11-29 19:13:40.746  WARN 10880 --- [    Test worker] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+í2020-11-29 19:13:40.757  INFO 10880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-11-29 19:13:40.758  INFO 10880 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2020-11-29 19:13:40.758  INFO 10880 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+ò2020-11-29 19:13:40.800  INFO 10880 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+§2020-11-29 19:13:40.801  INFO 10880 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 491 ms
+Ä2020-11-29 19:13:40.854  INFO 10880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+Ö2020-11-29 19:13:40.867  INFO 10880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+ª2020-11-29 19:13:40.867  INFO 10880 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:..\quizdb'
+ü2020-11-29 19:13:40.961  INFO 10880 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ü2020-11-29 19:13:40.984  INFO 10880 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Ÿ2020-11-29 19:13:41.059  INFO 10880 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2020-11-29 19:13:41.059  INFO 10880 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+ù2020-11-29 19:13:41.134  WARN 10880 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ú2020-11-29 19:13:41.181  INFO 10880 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+õ2020-11-29 19:13:41.297  INFO 10880 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+°2020-11-29 19:13:41.323  INFO 10880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+•2020-11-29 19:13:41.327  INFO 10880 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 1.056 seconds (JVM running for 11.928)
 [1;31m
 Start test 20[0m
-≤2020-11-27 20:50:07.759  WARN 6724 --- [nio-8889-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 4, column: 4]]
+ü2020-11-29 19:13:41.358  INFO 10880 --- [nio-8889-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2020-11-29 19:13:41.359  INFO 10880 --- [nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+Ü2020-11-29 19:13:41.363  INFO 10880 --- [nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
 [1;31m
 Start test 21[0m
-≤2020-11-27 20:50:07.770  WARN 6724 --- [nio-8889-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 5, column: 4]]
 [1;31m
 Start test 22[0m
-Ä2020-11-27 20:50:07.822  WARN 6724 --- [nio-8889-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> engine.QuizController.addQuiz(engine.Quiz) with 2 errors: [Field error in object 'quiz' on field 'options': rejected value [null]; codes [NotEmpty.quiz.options,NotEmpty.options,NotEmpty.[Ljava.lang.String;,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quiz.options,options]; arguments []; default message [options]]; default message [must not be empty]] [Field error in object 'quiz' on field 'options': rejected value [null]; codes [NotNull.quiz.options,NotNull.options,NotNull.[Ljava.lang.String;,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quiz.options,options]; arguments []; default message [options]]; default message [must not be null]] ]
 [1;31m
 Start test 23[0m
-≤2020-11-27 20:50:07.847  WARN 6724 --- [nio-8889-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 5, column: 4]]
 [1;31m
 Start test 24[0m
-≤2020-11-27 20:50:07.856  WARN 6724 --- [nio-8889-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 5, column: 4]]
 [1;31m
 Start test 25[0m
+≥2020-11-29 19:13:41.428  WARN 10880 --- [nio-8889-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+9 at [Source: (PushbackInputStream); line: 4, column: 4]]
 [1;31m
 Start test 26[0m
+≥2020-11-29 19:13:41.449  WARN 10880 --- [nio-8889-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+9 at [Source: (PushbackInputStream); line: 5, column: 4]]
 [1;31m
 Start test 27[0m
+≥2020-11-29 19:13:41.457  WARN 10880 --- [nio-8889-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+9 at [Source: (PushbackInputStream); line: 4, column: 4]]
 [1;31m
 Start test 28[0m
+≥2020-11-29 19:13:41.465  WARN 10880 --- [nio-8889-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+9 at [Source: (PushbackInputStream); line: 5, column: 4]]
 [1;31m
 Start test 29[0m
+Å2020-11-29 19:13:41.519  WARN 10880 --- [nio-8889-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> engine.QuizController.addQuiz(engine.Quiz) with 2 errors: [Field error in object 'quiz' on field 'options': rejected value [null]; codes [NotEmpty.quiz.options,NotEmpty.options,NotEmpty.[Ljava.lang.String;,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quiz.options,options]; arguments []; default message [options]]; default message [must not be empty]] [Field error in object 'quiz' on field 'options': rejected value [null]; codes [NotNull.quiz.options,NotNull.options,NotNull.[Ljava.lang.String;,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quiz.options,options]; arguments []; default message [options]]; default message [must not be null]] ]
 [1;31m
 Start test 30[0m
+≥2020-11-29 19:13:41.539  WARN 10880 --- [nio-8889-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+9 at [Source: (PushbackInputStream); line: 5, column: 4]]
 [1;31m
 Start test 31[0m
+≥2020-11-29 19:13:41.548  WARN 10880 --- [nio-8889-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+9 at [Source: (PushbackInputStream); line: 5, column: 4]]
 [1;31m
 Start test 32[0m
 [1;31m
@@ -262,3 +314,71 @@
 Start test 113[0m
 [1;31m
 Start test 114[0m
+[1;31m
+Start test 115[0m
+[1;31m
+Start test 116[0m
+[1;31m
+Start test 117[0m
+[1;31m
+Start test 118[0m
+[1;31m
+Start test 119[0m
+[1;31m
+Start test 120[0m
+[1;31m
+Start test 121[0m
+[1;31m
+Start test 122[0m
+[1;31m
+Start test 123[0m
+ù2020-11-29 19:13:42.725  INFO 10880 --- [       Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+•2020-11-29 19:13:42.725  INFO 10880 --- [       Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+ä2020-11-29 19:13:42.726  INFO 10880 --- [       Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+à2020-11-29 19:13:42.794  INFO 10880 --- [       Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+ú2020-11-29 19:13:42.855  INFO 10880 --- [       Thread-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+
+)  .   ____          _            __ _ _
+* /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
++( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+, \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
++  '  |____| .__|_| |_|_| |_\__, | / / / /
+* =========|_|==============|___/=/_/_/_/
+, :: Spring Boot ::        (v2.2.2.RELEASE)
+
+Á2020-11-29 19:13:42.869  INFO 10880 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on nec with PID 10880 (started by Lena in C:\Users\Lena\IdeaProjects\Web Quiz Engine\Web Quiz Engine\task)
+¶2020-11-29 19:13:42.870  INFO 10880 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
+°2020-11-29 19:13:43.153  INFO 10880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+π2020-11-29 19:13:43.162  INFO 10880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 1 JPA repository interfaces.
+ä2020-11-29 19:13:43.214  INFO 10880 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+≥2020-11-29 19:13:43.244  WARN 10880 --- [    Test worker] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+í2020-11-29 19:13:43.252  INFO 10880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-11-29 19:13:43.253  INFO 10880 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2020-11-29 19:13:43.253  INFO 10880 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+ò2020-11-29 19:13:43.309  INFO 10880 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+§2020-11-29 19:13:43.309  INFO 10880 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 431 ms
+Ä2020-11-29 19:13:43.351  INFO 10880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+Ö2020-11-29 19:13:43.360  INFO 10880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+ª2020-11-29 19:13:43.361  INFO 10880 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:..\quizdb'
+ü2020-11-29 19:13:43.438  INFO 10880 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ü2020-11-29 19:13:43.446  INFO 10880 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Ÿ2020-11-29 19:13:43.504  INFO 10880 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2020-11-29 19:13:43.504  INFO 10880 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+ù2020-11-29 19:13:43.568  WARN 10880 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ú2020-11-29 19:13:43.604  INFO 10880 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+õ2020-11-29 19:13:43.696  INFO 10880 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+°2020-11-29 19:13:43.715  INFO 10880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+•2020-11-29 19:13:43.717  INFO 10880 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 0.892 seconds (JVM running for 14.317)
+[1;31m
+Start test 124[0m
+ü2020-11-29 19:13:43.725  INFO 10880 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2020-11-29 19:13:43.725  INFO 10880 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+Ü2020-11-29 19:13:43.728  INFO 10880 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+[1;31m
+Start test 125[0m
+[1;31m
+Start test 126[0m
+[1;31m
+Start test 127[0m
+[1;31m
+Start test 128[0m

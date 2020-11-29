@@ -1,13 +1,15 @@
 package engine;
 
-public class Answer {
-    private int[] answer;
+import java.util.List;
 
-    public void setAnswer(int[] answers) {
+public class Answer {
+    private List<Integer> answer;
+
+    public void setAnswer(List<Integer> answers) {
         this.answer = answers;
     }
 
-    public int[] getAnswer() {
+    public List<Integer> getAnswer() {
         return answer;
     }
 }
