@@ -790,6 +790,53 @@ files:
         }
     }
   learner_created: false
+- name: src/engine/QuizRepository.java
+  visible: true
+  text: |
+    package engine;
+
+    import org.springframework.data.jpa.repository.JpaRepository;
+
+    public interface QuizRepository extends JpaRepository<Quiz, Integer> {
+    }
+  learner_created: true
+- name: src/engine/Answer.java
+  visible: true
+  text: |
+    package engine;
+
+    import java.util.List;
+
+    public class Answer {
+        private List<Integer> answer;
+
+        public void setAnswer(List<Integer> answers) {
+            this.answer = answers;
+        }
+
+        public List<Integer> getAnswer() {
+            return answer;
+        }
+    }
+  learner_created: true
+- name: src/engine/WebSecurityConfig.java
+  visible: true
+  learner_created: true
+- name: src/engine/User.java
+  visible: true
+  learner_created: true
+- name: src/engine/UserRepository.java
+  visible: true
+  learner_created: true
+- name: src/engine/UserService.java
+  visible: true
+  learner_created: true
+- name: src/engine/UserController.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/91/stages/508/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 30 Nov 2020 12:44:29 UTC
 record: -1

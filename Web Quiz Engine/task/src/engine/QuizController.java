@@ -3,6 +3,7 @@ package engine;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -19,6 +20,9 @@ public class QuizController {
 
     @Autowired
     public QuizRepository repository;
+
+    @Autowired
+    public UserService userService;
 
     @GetMapping
     public List<Quiz> list() {
@@ -38,6 +42,9 @@ public class QuizController {
     @PostMapping
     public ResponseEntity<Object> addQuiz(@Valid @RequestBody Quiz quiz) {
         try {
+            User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            quiz.setUser(user);
+            //System.out.println(user.getEmail());
             repository.save(quiz);
             return new ResponseEntity<>(quiz, HttpStatus.OK);
         } catch (Exception e) {
@@ -56,6 +63,22 @@ public class QuizController {
                 return new ResponseEntity<>("{\"success\":false,\"feedback\":\"Wrong answer! Please, try again.\"}", HttpStatus.OK);
             }
         } catch (ValidationException e) {
+            return new ResponseEntity<>("404 (Not found)", HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Object> delete(@PathVariable(value = "id") Integer id) {
+        try {
+            Quiz quiz = repository.findById(id).get();
+            User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            if (quiz.getUser().getId() == user.getId()) {
+                repository.delete(quiz);
+                return new ResponseEntity<>("204 (No content)", HttpStatus.NO_CONTENT);
+            } else {
+                return new ResponseEntity<>("403 (Forbidden)", HttpStatus.FORBIDDEN);
+            }
+        } catch (Exception e) {
             return new ResponseEntity<>("404 (Not found)", HttpStatus.NOT_FOUND);
         }
     }

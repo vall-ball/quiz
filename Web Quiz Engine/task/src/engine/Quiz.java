@@ -25,6 +25,7 @@ public class Quiz {
     @NotEmpty
     @Size(min = 2)
     private String[] options;
+
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ElementCollection
     @CollectionTable(
@@ -33,6 +34,11 @@ public class Quiz {
     )
     @OrderColumn(name="sequence")
     private List<Integer> answer = new ArrayList<>();
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private User user;
 
     public int getId() {
         return id;
@@ -72,5 +78,13 @@ public class Quiz {
 
     public void setAnswer(List<Integer> answer) {
         this.answer = answer;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public User getUser() {
+        return user;
     }
 }
