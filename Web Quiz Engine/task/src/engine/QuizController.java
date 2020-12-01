@@ -1,6 +1,12 @@
 package engine;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -10,6 +16,7 @@ import javax.validation.Valid;
 import javax.validation.ValidationException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -24,10 +31,8 @@ public class QuizController {
     @Autowired
     public UserService userService;
 
-    @GetMapping
-    public List<Quiz> list() {
-        return repository.findAll();
-    }
+    @Autowired
+    public CompletedQuizService completedQuizService;
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<Object> getQuiz(@PathVariable(value = "id") int id) {
@@ -58,6 +63,11 @@ public class QuizController {
         try {
             quiz = repository.findById(id).get();
             if (compareLists(quiz.getAnswer(), answer.getAnswer())) {
+                CompletedQuiz completedQuiz = new CompletedQuiz();
+                completedQuiz.setId(quiz.getId());
+                completedQuiz.setUsername(((User) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
+                completedQuiz.setCompletedAt(LocalDateTime.now());
+                completedQuizService.save(completedQuiz);
                 return new ResponseEntity<>("{\"success\":true,\"feedback\":\"Congratulations, you're right!\"}", HttpStatus.OK);
             } else {
                 return new ResponseEntity<>("{\"success\":false,\"feedback\":\"Wrong answer! Please, try again.\"}", HttpStatus.OK);
@@ -106,6 +116,32 @@ public class QuizController {
             }
         }
        return true;
+    }
+
+    @GetMapping
+    public ResponseEntity<Page<Quiz>> pageList(@RequestParam(defaultValue = "0") Integer page,
+                                               @RequestParam(defaultValue = "10") Integer pageSize,
+                                               @RequestParam(defaultValue = "id") String sortBy) {
+        Page<Quiz> pagedResult = findAll(page, pageSize, sortBy);
+        //System.out.println("@RequestParam page = "  + page);
+        return new ResponseEntity<Page<Quiz>>(pagedResult, new HttpHeaders(), HttpStatus.OK);
+    }
+
+    public Page<Quiz> findAll(Integer pageNo, Integer pageSize, String sortBy) {
+        Pageable paging = PageRequest.of(pageNo, pageSize, Sort.by(sortBy));
+        Page<Quiz> pagedResult = repository.findAll(paging);
+        return pagedResult;
+    }
+
+
+    @GetMapping("/completed")
+    public ResponseEntity<Page<CompletedQuiz>> pageCompleted(@RequestParam(defaultValue = "0") Integer page,
+                                               @RequestParam(defaultValue = "10") Integer pageSize,
+                                               @RequestParam(defaultValue = "id") String sortBy) {
+        String username = ((User) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername();
+        Page<CompletedQuiz> pagedResult = completedQuizService.findAll(page, pageSize, sortBy, username);
+        //System.out.println("@RequestParam page = "  + page);
+        return new ResponseEntity<Page<CompletedQuiz>>(pagedResult, new HttpHeaders(), HttpStatus.OK);
     }
 
 

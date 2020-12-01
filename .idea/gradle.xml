@@ -11,6 +11,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Problems/Apply function to all elements" />
+            <option value="$PROJECT_DIR$/Problems/Ascending and descending sorting" />
             <option value="$PROJECT_DIR$/Web Quiz Engine/task" />
           </set>
         </option>

@@ -11,6 +11,7 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 @SuppressWarnings("serial")
 @Entity
@@ -84,4 +85,5 @@ public class User implements UserDetails {
         this.setPassword(passwordEncoder.encode(password));
         return this;
     }
+
 }

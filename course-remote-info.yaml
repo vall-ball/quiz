@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/287312/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Mon, 30 Nov 2020 11:55:57 UTC
+update_date: Tue, 01 Dec 2020 02:02:46 UTC
 stages:
 - id: 504
   step: 8252
@@ -22,7 +22,7 @@ stages:
   is_completed: true
 - id: 509
   step: 8257
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: External resources
@@ -251,12 +251,12 @@ topics:
   - title: Introduction to JPA
     theory_id: 8771
   5:
-  - title: Lambda expressions
-    theory_id: 11635
   - title: Abstract class
     theory_id: 3597
   - title: Anonymous classes
     theory_id: 3564
+  - title: Lambda expressions
+    theory_id: 11635
   - title: Method references
     theory_id: 3620
   - title: Functional interfaces

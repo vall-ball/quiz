@@ -1,10 +1,26 @@
+engine/QuizRepository.java
+ engine.QuizRepository
 engine/Answer.java
  engine.Answer
 engine/WebQuizEngine.java
  engine.WebQuizEngine
-engine/QuizRepository.java
- engine.QuizRepository
+engine/WebSecurityConfig.java
+ engine.WebSecurityConfig
+engine/UserRepository.java
+ engine.UserRepository
+engine/UserController.java
+ engine.UserController
 engine/Quiz.java
  engine.Quiz
+engine/User.java
+ engine.User
+engine/UserService.java
+ engine.UserService
+engine/CompletedQuiz.java
+ engine.CompletedQuiz
+engine/CompletedQuizRepository.java
+ engine.CompletedQuizRepository
 engine/QuizController.java
  engine.QuizController
+engine/CompletedQuizService.java
+ engine.CompletedQuizService
